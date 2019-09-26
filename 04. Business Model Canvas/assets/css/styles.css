@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+.bmc {
+  display: grid;
+  padding: 2px;
+}
+
+.bmc,
+.bmc > article {
+  background: #fff;
+}
+
+.bmc > article {
+  display: grid;
+  position: relative;
+  gap: 10px;
+  grid-template-rows: 30px;
+  grid-auto-rows: 65px;
+  padding: 8px;
+  box-shadow: 0 0 0 2px;
+}
+
+.bmc h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #5b5b5b;
+}
+
+/* Disregards the .notes container entirely and lets the children participate in the grid or flex layout */
+.bmc > article .notes {
+  display: contents;
+}
+
+.note {
+  padding: 15px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Style resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: currentColor;
+  transition: 0.2s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.3em 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+}

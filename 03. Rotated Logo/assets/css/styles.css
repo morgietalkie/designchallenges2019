@@ -1,0 +1,35 @@
+body {
+  background: #efefef;
+}
+
+.card-wrapper {
+  padding: 0 30px;
+}
+
+.card {
+  margin: 4em auto;
+  max-width: 350px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+}
+
+.icon {
+  padding: 10px;
+  height: 60px;
+  width: 60px;
+  background: #efefef;
+  border: 2px solid rgba(195, 155, 95, 0.5);
+}
+
+.icon svg {
+  fill: hsl(47, 3%, 42%);
+}

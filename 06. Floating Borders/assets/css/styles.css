@@ -14,7 +14,10 @@
   line-height: 1.15;
   margin: 0;
   height: 100%;
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 99562c8db65a7bfb90d1b508f32a81843bba214e
 }
 
 p {
@@ -42,6 +45,7 @@ body {
   place-items: center;
   background: #26438b;
 }
+<<<<<<< HEAD
 
 .content::before {
   content: "";
@@ -66,3 +70,5 @@ body {
   border-top: 5px;
   border-left: 5px;
 }
+=======
+>>>>>>> 99562c8db65a7bfb90d1b508f32a81843bba214e
