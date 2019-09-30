@@ -1,0 +1,66 @@
+html {
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  padding: 10px 18px 20px 24px;
+  background: #fff;
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 8px 20px 8px 13px;
+  background: hsla(28, 25%, 95%, 1);
+  font-size: 0.75rem;
+  width: 100%;
+  resize: none;
+  font-weight: 400;
+
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  background: hsla(28, 25%, 95%, 0);
+}
+
+input:focus {
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  /* color: currentColor; */
+}
+
+button[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 0.8rem;
+  border: 0;
+  background: hsla(0, 10%, 35%, 1);
+  color: #fff;
+
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #ece5df;
+}

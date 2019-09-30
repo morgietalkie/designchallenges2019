@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Floating Borders</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <form action="#0">
+      <label>
+        Name
+        <input
+          type="text"
+          name="navn"
+          placeholder="fx John Doe"
+          pattern="[a-zA-ZæøåÆØÅ\s\-]+"
+          required=""
+        />
+      </label>
+
+      <label>
+        Email
+        <input
+          name="email"
+          type="email"
+          placeholder="fx peter@gmail.com"
+          required=""
+        />
+      </label>
+
+      <label>
+        Phone number
+        <input
+          type="tel"
+          name="tel"
+          pattern="[0-9]*"
+          placeholder="Indtast telefonnummer"
+          required=""
+        />
+      </label>
+
+      <label for="zip">
+        Zip / City
+        <input
+          type="text"
+          name="zip"
+          maxlength="4"
+          placeholder="fx 3480"
+          pattern="[0-9]{4}"
+          required=""
+        />
+        <input
+          type="text"
+          name="city"
+          placeholder="fx Fredensborg"
+          pattern="[a-zA-ZæøåÆØÅ\s\-]+"
+          required=""
+        />
+      </label>
+
+      <label>
+        Message
+        <textarea
+          id="message"
+          name="besked"
+          rows="5"
+          placeholder="What would you like to say..?"
+          required=""
+        ></textarea>
+      </label>
+
+      <button class="btn" type="submit">Submit enquiry</button>
+    </form>
+  </body>
+</html>
