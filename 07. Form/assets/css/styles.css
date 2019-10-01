@@ -1,0 +1,88 @@
+html {
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  padding: 10px 18px 20px 24px;
+  background: #fff;
+  border-radius: 3px;
+  width: 500px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.164), 0 3px 3px 0 rgba(0, 0, 0, 0.185);
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 8px 20px 8px 13px;
+  background: hsla(28, 25%, 95%, 1);
+  font-size: 0.75rem;
+  width: 70%;
+  resize: none;
+  font-weight: 400;
+  margin-left: auto;
+
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.25s ease;
+  border: none;
+  border-radius: 3px;
+}
+
+input:focus,
+textarea:focus {
+  background: hsla(28, 25%, 95%, 0);
+  border: 1px rgb(219, 218, 218) solid;
+}
+
+input:focus {
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  /* color: currentColor; */
+}
+
+button[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 0.8rem;
+  border: 0;
+  background: hsla(0, 10%, 35%, 1);
+  color: #fff;
+
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.062), 0 3px 3px 0 rgba(0, 0, 0, 0.075);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #ece5df;
+}
+
+label[for="zip"] > input:nth-child(1) {
+  width: calc(30% - 10px);
+}
+
+label[for="zip"] > input:nth-child(2) {
+  width: 40%;
+  margin-left: 10px;
+}
